@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ClashDisplay", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+body {
+  background: #f6f3ed;
+}
+
+.first__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-bottom: 2px solid #5f6921;
+  margin: -14px 121px;
+  padding: 22px 20px;
+}
+
+.plants {
+  padding: 88px;
+  border-right: 2px solid #5f6921;
+  margin: 10px 40px;
+}
+.plants ul li {
+  font-size: 40px;
+  padding: 8px 16px;
+}
+
+.plants li:hover {
+  color: #5f6921;
+  transition: ease-in-out 0.6s;
+}
+
+.section__img {
+  background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-slide-3-opt-1.jpg");
+  height: 481px;
+  width: 50%;
+  display: flex;
+  gap: 5px;
+  margin-right: 5rem;
+  background-repeat: no-repeat;
+}
+.section__img .container {
+  margin-right: 20px;
+}
+
+.section__img__text {
+  position: absolute;
+  transform: translate(6%, 120%);
+  color: aliceblue;
+  gap: 10px;
+}
+.section__img__text h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.section__img__text p {
+  margin-bottom: 10px;
+  line-height: 1.8rem;
+}
+.section__img__text button {
+  margin-bottom: 10px;
+}
+
+.button__prime {
+  background-color: #5f6921;
+  height: 2.5rem;
+  width: 5rem;
+  border: none;
+  color: aliceblue;
+}
+
+.button__prime:hover {
+  background-color: #535c1b;
+  transition: ease-in-out 0.3s;
+}
+
+.nav {
+  padding: 0.8% 6%;
+}
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #5f6921;
+  padding: 0.7% 1%;
+}
+.nav .container .fa-chevron-down {
+  color: gray;
+  font-size: 12px;
+}
+.nav ul {
+  display: flex;
+  padding: 20px;
+  gap: 1rem;
+}
+.nav ul li a {
+  color: black;
+  transition: ease-in 0.2s;
+}
+.nav li a:hover {
+  color: #5f6921;
+  transition: ease-in-out 6ms;
+}
+
+.logo img {
+  height: 38px;
+}
+
+.login {
+  display: flex;
+  gap: 18px;
+  padding: 20px 30px;
+  color: black;
+}
+.login span {
+  color: black;
+}
+.login span:hover {
+  color: gray;
+  transition: ease-in-out 0.2s;
+}
+
+.login div:hover {
+  color: gray;
+  transition: ease-in-out 0.2s;
+}
+
+.login > div > i {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
