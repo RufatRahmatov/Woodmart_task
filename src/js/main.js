@@ -1,4 +1,3 @@
-// Google Analytics tracking code
 (function () {
     const em_version = "7.28.0";
     const em_track_user = true;
@@ -23,27 +22,22 @@
 
     /* Function to detect opted out users */
     function __gtagTrackerIsOptedOut() {
-        for (let index = 0; index < disableStrs.length; index++) {
-            if (document.cookie.indexOf(disableStrs[index] + "=true") > -1) {
-                return true;
-            }
-        }
-        return false;
+        return disableStrs.some(disableStr => document.cookie.indexOf(disableStr + "=true") > -1);
     }
 
     /* Disable tracking if the opt-out cookie exists. */
     if (__gtagTrackerIsOptedOut()) {
-        for (let index = 0; index < disableStrs.length; index++) {
-            window[disableStrs[index]] = true;
-        }
+        disableStrs.forEach(disableStr => {
+            window[disableStr] = true;
+        });
     }
 
     /* Opt-out function */
     function __gtagTrackerOptout() {
-        for (let index = 0; index < disableStrs.length; index++) {
-            document.cookie = disableStrs[index] + "=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
-            window[disableStrs[index]] = true;
-        }
+        disableStrs.forEach(disableStr => {
+            document.cookie = `${disableStr}=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/`;
+            window[disableStr] = true;
+        });
     }
 
     if (typeof gaOptout === "undefined") {
@@ -53,7 +47,6 @@
     }
 
     window.dataLayer = window.dataLayer || [];
-
     window.ExactMetricsDualTracker = {
         helpers: {},
         trackers: {}
@@ -73,11 +66,11 @@
             if (type === "event") {
                 parameters.send_to = exactmetrics_frontend.v4_id;
                 let hookName = name;
-                if (typeof parameters["event_category"] !== "undefined") {
-                    hookName = parameters["event_category"] + ":" + name;
+                if (parameters["event_category"]) {
+                    hookName = `${parameters["event_category"]}:${name}`;
                 }
 
-                if (typeof ExactMetricsDualTracker.trackers[hookName] !== "undefined") {
+                if (ExactMetricsDualTracker.trackers[hookName]) {
                     ExactMetricsDualTracker.trackers[hookName](parameters);
                 } else {
                     __gtagDataLayer("event", name, parameters);
@@ -101,14 +94,8 @@
         window.gtag = __gtagTracker;
 
         (function () {
-            /* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
-            /* ga and __gaTracker compatibility shim. */
-            const noopfn = function () {
-                return null;
-            };
-            const newtracker = function () {
-                return new Tracker();
-            };
+            const noopfn = () => null;
+            const newtracker = () => new Tracker();
             const Tracker = function () {
                 return null;
             };
@@ -128,9 +115,9 @@
                 const f = arguments[len - 1];
                 if (typeof f !== "object" || f === null || typeof f.hitCallback !== "function") {
                     if ("send" === arguments[0]) {
-                        let hitConverted, hitObject = false, action;
+                        let hitObject = false, action;
                         if ("event" === arguments[1]) {
-                            if ("undefined" !== typeof arguments[3]) {
+                            if (typeof arguments[3] !== "undefined") {
                                 hitObject = {
                                     eventAction: arguments[3],
                                     eventCategory: arguments[2],
@@ -140,7 +127,7 @@
                             }
                         }
                         if ("pageview" === arguments[1]) {
-                            if ("undefined" !== typeof arguments[2]) {
+                            if (typeof arguments[2] !== "undefined") {
                                 hitObject = {
                                     eventAction: "page_view",
                                     page_path: arguments[2]
@@ -153,7 +140,7 @@
                         if (typeof arguments[5] === "object") {
                             Object.assign(hitObject, arguments[5]);
                         }
-                        if ("undefined" !== typeof arguments[1].hitType) {
+                        if (typeof arguments[1].hitType !== "undefined") {
                             hitObject = arguments[1];
                             if ("pageview" === hitObject.hitType) {
                                 hitObject.eventAction = "page_view";
@@ -161,7 +148,7 @@
                         }
                         if (hitObject) {
                             action = "timing" === arguments[1].hitType ? "timing_complete" : hitObject.eventAction;
-                            hitConverted = mapArgs(hitObject);
+                            const hitConverted = mapArgs(hitObject);
                             __gtagTracker("event", action, hitConverted);
                         }
                     }
@@ -201,9 +188,7 @@
             };
             __gaTracker.create = newtracker;
             __gaTracker.getByName = newtracker;
-            __gaTracker.getAll = function () {
-                return [];
-            };
+            __gaTracker.getAll = () => [];
             __gaTracker.remove = noopfn;
             __gaTracker.loaded = true;
             window["__gaTracker"] = __gaTracker;
@@ -220,7 +205,6 @@
     }
 })();
 
-// Add to cart parameters
 const wc_add_to_cart_params = {
     ajax_url: "/plants/wp-admin/admin-ajax.php",
     wc_ajax_url: "/plants/?wc-ajax=%%endpoint%%",
@@ -230,27 +214,25 @@ const wc_add_to_cart_params = {
     cart_redirect_after_add: "no"
 };
 
-// Woocommerce parameters
 const woocommerce_params = {
     ajax_url: "/plants/wp-admin/admin-ajax.php",
     wc_ajax_url: "/plants/?wc-ajax=%%endpoint%%"
 };
 
-// Google Analytics by ExactMetrics
 function setREVStartSize(e) {
     window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
     window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
     try {
         let pw = document.getElementById(e.c).parentNode.offsetWidth,
             newh;
-        pw = pw === 0 || isNaN(pw) || e.l == "fullwidth" || e.layout == "fullwidth" ? window.RSIW : pw;
+        pw = pw === 0 || isNaN(pw) || e.l === "fullwidth" || e.layout === "fullwidth" ? window.RSIW : pw;
         e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
         e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
         e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
         e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
         e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
         e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
-        e.mh = e.mh === undefined || e.mh == "" ? 0 : e.mh;
+        e.mh = e.mh === undefined || e.mh === "" ? 0 : e.mh;
 
         if (e.layout === "fullscreen" || e.l === "fullscreen") {
             newh = Math.max(e.mh, window.RSIH);
@@ -275,12 +257,11 @@ function setREVStartSize(e) {
         if (stickyBanner) {
             stickyBanner.style.height = `${newh}px`;
         }
-    } catch (e) {
-        console.log(e);
+    } catch (err) {
+        console.log(err);
     }
 }
 
-// Add to cart form handling
 jQuery(function ($) {
     if (typeof wc_add_to_cart_params === 'undefined') {
         return false;
@@ -303,7 +284,7 @@ jQuery(function ($) {
             const $thisbutton = $form.find('.single_add_to_cart_button');
 
             if ($thisbutton.is('.ajax_add_to_cart')) {
-                $.post(wc_add_to_cart_params.wc_ajax_url.toString().replace('%%endpoint%%', 'add_to_cart'), $form.serialize(), function (response) {
+                $.post(wc_add_to_cart_params.wc_ajax_url.replace('%%endpoint%%', 'add_to_cart'), $form.serialize(), function (response) {
                     if (!response) {
                         return;
                     }
