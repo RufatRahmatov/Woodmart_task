@@ -17,3 +17,31 @@
     }
   }
 }
+.header-main {
+  background-color: $primary-color;
+  .whb-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .whb-logo img {
+    max-height: 50px;
+  }
+  .menu-main-menu-container {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 0 15px;
+      .woodmart-nav-link {
+        color: $font-color;
+        text-decoration: none;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,17 @@
 .button {
-  background-color: $primary-color;
-  color: #fff;
-  border-radius: 4px;
+  background-color: $secondary-color;
+  border: none;
   padding: 10px 20px;
-
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
   &:hover {
-    background-color: darken($primary-color, 10%);
+    background-color: darken($secondary-color, 10%);
+    color: white;
   }
 }
