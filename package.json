@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "start": "json-server --watch db.json --port 3000",
     "compile": "sass src/styles/scss:src/styles/css --watch"
   },
   "dependencies": {

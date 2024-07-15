@@ -1,0 +1,11 @@
+.footer {
+  background-color: darken($primary-color, 20%);
+  color: #fff;
+  padding: 20px;
+
+  .footer-links {
+    a {
+      color: $secondary-color;
+    }
+  }
+}

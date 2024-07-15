@@ -1,0 +1,19 @@
+.navbar {
+  background-color: $primary-color;
+  color: #fff;
+
+  .logo {
+    @include flex-center;
+  }
+
+  nav {
+    a {
+      color: #fff;
+      padding: 10px;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}

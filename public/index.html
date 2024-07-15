@@ -1,118 +1,983 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Woodmart</title>
     <link rel="stylesheet" href="../src/styles/css/main.css" />
-    <title>Document</title>
-    <script defer src="../src/js/main.js"></script>
+    <script defer src="main.js"></script>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <div class="container">
-          <ul>
-            <li class="nav__item">
-              <a href="" class="nav-link">Shop</a>
-              <i class="fa-solid fa-chevron-down"></i>
-              <div class="shop">
-                <div class="shop__content">
-                  <a href="">Plants</a>
-                  <a href="">Planters</a>
-                  <a href="">Plant Care</a>
-                  <a href="">Gift Ideas</a>
-                  <a href="">Pet Friendly</a>
+    <div id="wrapper">
+      <header id="header" class="site-header">
+        <div class="header-main">
+          <div class="whb-container">
+            <div class="whb-flex-row whb-general-header">
+              <div
+                class="whb-column whb-col-lg-3 whb-col-md-3 whb-hidden-sm whb-hidden-xs"
+              >
+                <div class="whb-element whb-nav-wrap">
+                  <div class="menu-main-menu-container">
+                    <ul id="menu-main-menu" class="menu">
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page-item page-item-140 current_page_item menu-item-3036"
+                      >
+                        <a
+                          href="https://woodmart.xtemos.com/plants/"
+                          class="woodmart-nav-link"
+                          ><span class="nav-link-text">Home</span></a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"
+                      >
+                        <a
+                          href="https://woodmart.xtemos.com/plants/shop/"
+                          class="woodmart-nav-link"
+                          ><span class="nav-link-text">Shop</span></a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"
+                      >
+                        <a
+                          href="https://woodmart.xtemos.com/plants/about-us/"
+                          class="woodmart-nav-link"
+                          ><span class="nav-link-text">About</span></a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"
+                      >
+                        <a
+                          href="https://woodmart.xtemos.com/plants/contact-us/"
+                          class="woodmart-nav-link"
+                          ><span class="nav-link-text">Contact</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="whb-element whb-nav-mobile whb-mobile-hidden">
+                  <div
+                    class="wd-search-element wd-header-search wd-search-design-1 wd-dropdown"
+                    role="search"
+                  >
+                    <div class="wd-search-form">
+                      <input
+                        type="text"
+                        name="s"
+                        placeholder="Search for products"
+                        class="wd-search-input"
+                        autocomplete="off"
+                        aria-label="Search for products"
+                      />
+                      <button type="submit" class="wd-search-submit">
+                        <span class="wd-icon-search"></span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </li>
-
-            <li><a href="">Blog</a></li>
-            <li><a href="">Care Library</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
-
-          <div class="logo">
-            <img
-              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/woodmart-plant-store-logo.svg"
-              alt=""
-            />
-          </div>
-
-          <div class="login">
-            <a href="">
-              <span class="login_register"> Login / Register</span>
-            </a>
-            <div><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div><i class="fa-regular fa-heart"></i> <span>0</span></div>
-            <div>
-              <i class="fa-solid fa-bag-shopping"></i> <span>0 / $0.00 </span>
+              <div
+                class="whb-column whb-col-lg-0 whb-col-sm-6 whb-hidden-lg whb-hidden-md"
+              >
+                <div
+                  class="whb-element whb-nav-mobile whb-hidden-lg whb-hidden-md"
+                >
+                  <div
+                    class="wd-search-element wd-header-search wd-search-design-1 wd-dropdown"
+                    role="search"
+                  >
+                    <div class="wd-search-form">
+                      <input
+                        type="text"
+                        name="s"
+                        placeholder="Search for products"
+                        class="wd-search-input"
+                        autocomplete="off"
+                        aria-label="Search for products"
+                      />
+                      <button type="submit" class="wd-search-submit">
+                        <span class="wd-icon-search"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="whb-column whb-col-lg-0 whb-col-sm-6 whb-hidden-lg whb-hidden-md"
+              >
+                <div class="whb-element whb-logo whb-font-whb-logo-font">
+                  <a
+                    href="https://woodmart.xtemos.com/plants/"
+                    title="Plants"
+                    rel="home"
+                  >
+                    <img
+                      src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-logo.png"
+                      class="wd-retina-off"
+                      alt="Plants"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <section class="first__section">
-      <div class="plants">
-        <ul>
-          <li>
-            Plants
-
-            <img
-              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/arrow.svg"
-              alt=""
-            />
-          </li>
-          <li>
-            Planters
-            <img
-              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/arrow.svg"
-              alt=""
-            />
-          </li>
-          <li>
-            Plant care
-            <img
-              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/arrow.svg"
-              alt=""
-            />
-          </li>
-          <li>
-            Gift ideas
-            <img
-              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/arrow.svg"
-              alt=""
-            />
-          </li>
-          <li>
-            Pet friendly
-            <img
-              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/arrow.svg"
-              alt=""
-            />
-          </li>
-        </ul>
-      </div>
-
-      <div class="section__img">
-        <div class="section__img__text">
-          <h1>We value fairness and <br />strive for simple products.</h1>
-          <p>
-            Specially designed for shipping delicate living plants, our
-            innovative <br />packaging ensures maximum protection during transit
-            and results.
-          </p>
-          <button class="button__prime">Shop all</button>
+      </header>
+      <main id="main" class="site-main" role="main">
+        <div class="page-content">
+          <div
+            class="vc_row wpb_row vc_row-fluid vc_custom_1683557187190 wd-rs-645aa4d4b94a5 wd-section-stretch"
+          >
+            <div
+              class="wpb_column vc_column_container vc_col-sm-12 wd-rs-645aa4d4b94f6"
+            >
+              <div class="vc_column-inner vc_custom_1683557197190">
+                <div class="wpb_wrapper">
+                  <div class="wd-cats-element wd-wpb wd-rs-645aa4d4b94f0">
+                    <div
+                      class="products woocommerce wd-img-width wd-grid-g wd-cats columns-4"
+                      style="
+                        --wd-col-lg: 4;
+                        --wd-col-md: 3;
+                        --wd-col-sm: 2;
+                        --wd-gap-lg: 30px;
+                        --wd-gap-sm: 10px;
+                      "
+                    >
+                      <div
+                        class="wd-col category-grid-item cat-design-alt product-category product first"
+                        data-loop="1"
+                      >
+                        <div class="wrapp-category">
+                          <div class="category-image-wrapp">
+                            <a
+                              href="https://woodmart.xtemos.com/plants/product-category/plants/"
+                              class="category-image"
+                              aria-label="Category image"
+                            >
+                              <picture
+                                class="attachment-full size-full"
+                                decoding="async"
+                              >
+                                <source
+                                  type="image/webp"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants.jpg.webp         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants-100x100.jpg.webp 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants-45x45.jpg.webp    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                                <img
+                                  width="128"
+                                  height="128"
+                                  src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants.jpg"
+                                  alt=""
+                                  decoding="async"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants.jpg         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants-100x100.jpg 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants-45x45.jpg    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="hover-mask">
+                            <h3 class="wd-entities-title">
+                              Plants <mark class="count">(25)</mark>
+                            </h3>
+                            <div class="more-products">
+                              <a
+                                href="https://woodmart.xtemos.com/plants/product-category/plants/"
+                                >25 products</a
+                              >
+                            </div>
+                          </div>
+                          <a
+                            href="https://woodmart.xtemos.com/plants/product-category/plants/"
+                            class="category-link wd-fill"
+                            aria-label="Product category plants"
+                          ></a>
+                        </div>
+                      </div>
+                      <div
+                        class="wd-col category-grid-item cat-design-alt product-category product"
+                        data-loop="2"
+                      >
+                        <div class="wrapp-category">
+                          <div class="category-image-wrapp">
+                            <a
+                              href="https://woodmart.xtemos.com/plants/product-category/planters/"
+                              class="category-image"
+                              aria-label="Category image"
+                            >
+                              <picture
+                                class="attachment-full size-full"
+                                decoding="async"
+                              >
+                                <source
+                                  type="image/webp"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters.jpg.webp         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters-100x100.jpg.webp 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters-45x45.jpg.webp    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                                <img
+                                  width="128"
+                                  height="128"
+                                  src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters.jpg"
+                                  alt=""
+                                  decoding="async"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters.jpg         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters-100x100.jpg 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters-45x45.jpg    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="hover-mask">
+                            <h3 class="wd-entities-title">
+                              Planters <mark class="count">(15)</mark>
+                            </h3>
+                            <div class="more-products">
+                              <a
+                                href="https://woodmart.xtemos.com/plants/product-category/planters/"
+                                >15 products</a
+                              >
+                            </div>
+                          </div>
+                          <a
+                            href="https://woodmart.xtemos.com/plants/product-category/planters/"
+                            class="category-link wd-fill"
+                            aria-label="Product category planters"
+                          ></a>
+                        </div>
+                      </div>
+                      <div
+                        class="wd-col category-grid-item cat-design-alt product-category product"
+                        data-loop="3"
+                      >
+                        <div class="wrapp-category">
+                          <div class="category-image-wrapp">
+                            <a
+                              href="https://woodmart.xtemos.com/plants/product-category/decor/"
+                              class="category-image"
+                              aria-label="Category image"
+                            >
+                              <picture
+                                class="attachment-full size-full"
+                                decoding="async"
+                              >
+                                <source
+                                  type="image/webp"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-decor.jpg.webp         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-decor-100x100.jpg.webp 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-decor-45x45.jpg.webp    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                                <img
+                                  width="128"
+                                  height="128"
+                                  src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-decor.jpg"
+                                  alt=""
+                                  decoding="async"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-decor.jpg         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-decor-100x100.jpg 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-decor-45x45.jpg    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="hover-mask">
+                            <h3 class="wd-entities-title">
+                              Decor <mark class="count">(19)</mark>
+                            </h3>
+                            <div class="more-products">
+                              <a
+                                href="https://woodmart.xtemos.com/plants/product-category/decor/"
+                                >19 products</a
+                              >
+                            </div>
+                          </div>
+                          <a
+                            href="https://woodmart.xtemos.com/plants/product-category/decor/"
+                            class="category-link wd-fill"
+                            aria-label="Product category decor"
+                          ></a>
+                        </div>
+                      </div>
+                      <div
+                        class="wd-col category-grid-item cat-design-alt product-category product"
+                        data-loop="4"
+                      >
+                        <div class="wrapp-category">
+                          <div class="category-image-wrapp">
+                            <a
+                              href="https://woodmart.xtemos.com/plants/product-category/ceramics/"
+                              class="category-image"
+                              aria-label="Category image"
+                            >
+                              <picture
+                                class="attachment-full size-full"
+                                decoding="async"
+                              >
+                                <source
+                                  type="image/webp"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-ceramics.jpg.webp         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-ceramics-100x100.jpg.webp 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-ceramics-45x45.jpg.webp    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                                <img
+                                  width="128"
+                                  height="128"
+                                  src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-ceramics.jpg"
+                                  alt=""
+                                  decoding="async"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-ceramics.jpg         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-ceramics-100x100.jpg 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-ceramics-45x45.jpg    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="hover-mask">
+                            <h3 class="wd-entities-title">
+                              Ceramics <mark class="count">(9)</mark>
+                            </h3>
+                            <div class="more-products">
+                              <a
+                                href="https://woodmart.xtemos.com/plants/product-category/ceramics/"
+                                >9 products</a
+                              >
+                            </div>
+                          </div>
+                          <a
+                            href="https://woodmart.xtemos.com/plants/product-category/ceramics/"
+                            class="category-link wd-fill"
+                            aria-label="Product category ceramics"
+                          ></a>
+                        </div>
+                      </div>
+                      <div
+                        class="wd-col category-grid-item cat-design-alt product-category product"
+                        data-loop="5"
+                      >
+                        <div class="wrapp-category">
+                          <div class="category-image-wrapp">
+                            <a
+                              href="https://woodmart.xtemos.com/plants/product-category/other/"
+                              class="category-image"
+                              aria-label="Category image"
+                            >
+                              <picture
+                                class="attachment-full size-full"
+                                decoding="async"
+                              >
+                                <source
+                                  type="image/webp"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-other.jpg.webp         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-other-100x100.jpg.webp 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-other-45x45.jpg.webp    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                                <img
+                                  width="128"
+                                  height="128"
+                                  src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-other.jpg"
+                                  alt=""
+                                  decoding="async"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-other.jpg         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-other-100x100.jpg 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-other-45x45.jpg    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="hover-mask">
+                            <h3 class="wd-entities-title">
+                              Other <mark class="count">(3)</mark>
+                            </h3>
+                            <div class="more-products">
+                              <a
+                                href="https://woodmart.xtemos.com/plants/product-category/other/"
+                                >3 products</a
+                              >
+                            </div>
+                          </div>
+                          <a
+                            href="https://woodmart.xtemos.com/plants/product-category/other/"
+                            class="category-link wd-fill"
+                            aria-label="Product category other"
+                          ></a>
+                        </div>
+                      </div>
+                      <div
+                        class="wd-col category-grid-item cat-design-alt product-category product"
+                        data-loop="6"
+                      >
+                        <div class="wrapp-category">
+                          <div class="category-image-wrapp">
+                            <a
+                              href="https://woodmart.xtemos.com/plants/product-category/bestsellers/"
+                              class="category-image"
+                              aria-label="Category image"
+                            >
+                              <picture
+                                class="attachment-full size-full"
+                                decoding="async"
+                              >
+                                <source
+                                  type="image/webp"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-bestsellers.jpg.webp         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-bestsellers-100x100.jpg.webp 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-bestsellers-45x45.jpg.webp    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                                <img
+                                  width="128"
+                                  height="128"
+                                  src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-bestsellers.jpg"
+                                  alt=""
+                                  decoding="async"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-bestsellers.jpg         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-bestsellers-100x100.jpg 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-bestsellers-45x45.jpg    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="hover-mask">
+                            <h3 class="wd-entities-title">
+                              Bestsellers <mark class="count">(20)</mark>
+                            </h3>
+                            <div class="more-products">
+                              <a
+                                href="https://woodmart.xtemos.com/plants/product-category/bestsellers/"
+                                >20 products</a
+                              >
+                            </div>
+                          </div>
+                          <a
+                            href="https://woodmart.xtemos.com/plants/product-category/bestsellers/"
+                            class="category-link wd-fill"
+                            aria-label="Product category bestsellers"
+                          ></a>
+                        </div>
+                      </div>
+                      <div
+                        class="wd-col category-grid-item cat-design-alt product-category product"
+                        data-loop="7"
+                      >
+                        <div class="wrapp-category">
+                          <div class="category-image-wrapp">
+                            <a
+                              href="https://woodmart.xtemos.com/plants/product-category/new-arrivals/"
+                              class="category-image"
+                              aria-label="Category image"
+                            >
+                              <picture
+                                class="attachment-full size-full"
+                                decoding="async"
+                              >
+                                <source
+                                  type="image/webp"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-new-arrivals.jpg.webp         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-new-arrivals-100x100.jpg.webp 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-new-arrivals-45x45.jpg.webp    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                                <img
+                                  width="128"
+                                  height="128"
+                                  src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-new-arrivals.jpg"
+                                  alt=""
+                                  decoding="async"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-new-arrivals.jpg         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-new-arrivals-100x100.jpg 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-new-arrivals-45x45.jpg    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="hover-mask">
+                            <h3 class="wd-entities-title">
+                              New Arrivals <mark class="count">(10)</mark>
+                            </h3>
+                            <div class="more-products">
+                              <a
+                                href="https://woodmart.xtemos.com/plants/product-category/new-arrivals/"
+                                >10 products</a
+                              >
+                            </div>
+                          </div>
+                          <a
+                            href="https://woodmart.xtemos.com/plants/product-category/new-arrivals/"
+                            class="category-link wd-fill"
+                            aria-label="Product category new arrivals"
+                          ></a>
+                        </div>
+                      </div>
+                      <div
+                        class="wd-col category-grid-item cat-design-alt product-category product"
+                        data-loop="8"
+                      >
+                        <div class="wrapp-category">
+                          <div class="category-image-wrapp">
+                            <a
+                              href="https://woodmart.xtemos.com/plants/product-category/on-sale/"
+                              class="category-image"
+                              aria-label="Category image"
+                            >
+                              <picture
+                                class="attachment-full size-full"
+                                decoding="async"
+                              >
+                                <source
+                                  type="image/webp"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-on-sale.jpg.webp         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-on-sale-100x100.jpg.webp 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-on-sale-45x45.jpg.webp    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                                <img
+                                  width="128"
+                                  height="128"
+                                  src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-on-sale.jpg"
+                                  alt=""
+                                  decoding="async"
+                                  srcset="
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-on-sale.jpg         128w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-on-sale-100x100.jpg 100w,
+                                    https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-on-sale-45x45.jpg    45w
+                                  "
+                                  sizes="(max-width: 128px) 100vw, 128px"
+                                />
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="hover-mask">
+                            <h3 class="wd-entities-title">
+                              On Sale <mark class="count">(5)</mark>
+                            </h3>
+                            <div class="more-products">
+                              <a
+                                href="https://woodmart.xtemos.com/plants/product-category/on-sale/"
+                                >5 products</a
+                              >
+                            </div>
+                          </div>
+                          <a
+                            href="https://woodmart.xtemos.com/plants/product-category/on-sale/"
+                            class="category-link wd-fill"
+                            aria-label="Product category on sale"
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="wd-bottom-banner wd-banner-alt wd-button-center wd-button-size-md wd-title-md wd-banner-radius"
+                    style="
+                      --wd-banner-height: 400px;
+                      --wd-banner-bg: rgba(229, 240, 233, 0.4);
+                    "
+                  >
+                    <div
+                      class="wd-bottom-banner-inner wd-banner-overlay wd-img-position-center-center"
+                      style="
+                        background-image: url(https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/banner-bg-plants.jpg);
+                      "
+                    >
+                      <div class="wd-bottom-banner-content">
+                        <h3 class="wd-bottom-banner-title">
+                          Plants that will make you <br />
+                          smile :)
+                        </h3>
+                        <div class="wd-bottom-banner-button wd-banner-btn-alt">
+                          <a
+                            href="https://woodmart.xtemos.com/plants/shop/"
+                            class="button wd-banner-button"
+                            target="_self"
+                            >Shop now</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="wd-section-heading text-center"
+                    style="margin-top: 60px"
+                  >
+                    <h2 class="wd-heading-title">Most Popular</h2>
+                  </div>
+                  <div
+                    class="products woocommerce wd-img-width wd-grid-lg wd-popular wd-rs-645aa4d4b94e8 wd-rs-645aa4d4b94e8-0 columns-4"
+                    style="
+                      --wd-col-lg: 4;
+                      --wd-col-md: 3;
+                      --wd-col-sm: 2;
+                      --wd-gap-lg: 30px;
+                      --wd-gap-sm: 10px;
+                    "
+                  >
+                    <div class="product-category product first" data-loop="1">
+                      <div class="product-element-top">
+                        <a
+                          href="https://woodmart.xtemos.com/plants/product/majestic-gardenia-plant/"
+                        >
+                          <picture>
+                            <source
+                              srcset="
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-gardenia-plant-300x300.jpg.webp 300w,
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-gardenia-plant-150x150.jpg.webp 150w,
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-gardenia-plant-100x100.jpg.webp 100w
+                              "
+                              sizes="(max-width: 300px) 100vw, 300px"
+                              type="image/webp"
+                            />
+                            <img
+                              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-gardenia-plant-300x300.jpg"
+                              alt=""
+                              decoding="async"
+                            />
+                          </picture>
+                        </a>
+                      </div>
+                      <h3 class="wd-entities-title">
+                        <a
+                          href="https://woodmart.xtemos.com/plants/product/majestic-gardenia-plant/"
+                          >Majestic Gardenia Plant</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-category product" data-loop="2">
+                      <div class="product-element-top">
+                        <a
+                          href="https://woodmart.xtemos.com/plants/product/ficus-bonsai-tree/"
+                        >
+                          <picture>
+                            <source
+                              srcset="
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-ficus-bonsai-300x300.jpg.webp 300w,
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-ficus-bonsai-150x150.jpg.webp 150w,
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-ficus-bonsai-100x100.jpg.webp 100w
+                              "
+                              sizes="(max-width: 300px) 100vw, 300px"
+                              type="image/webp"
+                            />
+                            <img
+                              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-ficus-bonsai-300x300.jpg"
+                              alt=""
+                              decoding="async"
+                            />
+                          </picture>
+                        </a>
+                      </div>
+                      <h3 class="wd-entities-title">
+                        <a
+                          href="https://woodmart.xtemos.com/plants/product/ficus-bonsai-tree/"
+                          >Ficus Bonsai Tree</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-category product" data-loop="3">
+                      <div class="product-element-top">
+                        <a
+                          href="https://woodmart.xtemos.com/plants/product/peace-lily-plant/"
+                        >
+                          <picture>
+                            <source
+                              srcset="
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-peace-lily-plant-300x300.jpg.webp 300w,
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-peace-lily-plant-150x150.jpg.webp 150w,
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-peace-lily-plant-100x100.jpg.webp 100w
+                              "
+                              sizes="(max-width: 300px) 100vw, 300px"
+                              type="image/webp"
+                            />
+                            <img
+                              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-peace-lily-plant-300x300.jpg"
+                              alt=""
+                              decoding="async"
+                            />
+                          </picture>
+                        </a>
+                      </div>
+                      <h3 class="wd-entities-title">
+                        <a
+                          href="https://woodmart.xtemos.com/plants/product/peace-lily-plant/"
+                          >Peace Lily Plant</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-category product" data-loop="4">
+                      <div class="product-element-top">
+                        <a
+                          href="https://woodmart.xtemos.com/plants/product/potted-orchid-plant/"
+                        >
+                          <picture>
+                            <source
+                              srcset="
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-potted-orchid-plant-300x300.jpg.webp 300w,
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-potted-orchid-plant-150x150.jpg.webp 150w,
+                                https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-potted-orchid-plant-100x100.jpg.webp 100w
+                              "
+                              sizes="(max-width: 300px) 100vw, 300px"
+                              type="image/webp"
+                            />
+                            <img
+                              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/p-potted-orchid-plant-300x300.jpg"
+                              alt=""
+                              decoding="async"
+                            />
+                          </picture>
+                        </a>
+                      </div>
+                      <h3 class="wd-entities-title">
+                        <a
+                          href="https://woodmart.xtemos.com/plants/product/potted-orchid-plant/"
+                          >Potted Orchid Plant</a
+                        >
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </main>
+      <footer id="footer" class="site-footer">
+        <div class="footer-main">
+          <div class="whb-container">
+            <div class="whb-flex-row whb-general-footer">
+              <div
+                class="whb-column whb-col-lg-3 whb-col-md-3 whb-hidden-sm whb-hidden-xs"
+              >
+                <div class="whb-element whb-logo whb-font-whb-logo-font">
+                  <a
+                    href="https://woodmart.xtemos.com/plants/"
+                    title="Plants"
+                    rel="home"
+                  >
+                    <img
+                      src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-logo.png"
+                      class="wd-retina-off"
+                      alt="Plants"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="whb-column whb-col-lg-9 whb-col-md-9 whb-hidden-sm whb-hidden-xs"
+              >
+                <div class="whb-element whb-footer-menu">
+                  <div class="menu-footer-menu-container">
+                    <ul id="menu-footer-menu" class="menu">
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"
+                      >
+                        <a
+                          href="https://woodmart.xtemos.com/plants/shop/"
+                          class="woodmart-nav-link"
+                          ><span class="nav-link-text">Shop</span></a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"
+                      >
+                        <a
+                          href="https://woodmart.xtemos.com/plants/about-us/"
+                          class="woodmart-nav-link"
+                          ><span class="nav-link-text">About</span></a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"
+                      >
+                        <a
+                          href="https://woodmart.xtemos.com/plants/contact-us/"
+                          class="woodmart-nav-link"
+                          ><span class="nav-link-text">Contact</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="whb-column whb-col-lg-0 whb-col-sm-6 whb-hidden-lg whb-hidden-md"
+              >
+                <div
+                  class="whb-element whb-footer-mobile-menu whb-hidden-lg whb-hidden-md"
+                >
+                  <div class="menu-footer-mobile-menu-container">
+                    <ul id="menu-footer-mobile-menu" class="menu">
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"
+                      >
+                        <a
+                          href="https://woodmart.xtemos.com/plants/shop/"
+                          class="woodmart-nav-link"
+                          ><span class="nav-link-text">Shop</span></a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"
+                      >
+                        <a
+                          href="https://woodmart.xtemos.com/plants/about-us/"
+                          class="woodmart-nav-link"
+                          ><span class="nav-link-text">About</span></a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"
+                      >
+                        <a
+                          href="https://woodmart.xtemos.com/plants/contact-us/"
+                          class="woodmart-nav-link"
+                          ><span class="nav-link-text">Contact</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="whb-column whb-col-lg-0 whb-col-sm-6 whb-hidden-lg whb-hidden-md"
+              >
+                <div
+                  class="whb-element whb-footer-mobile-search whb-hidden-lg whb-hidden-md"
+                >
+                  <div
+                    class="wd-search-element wd-footer-search wd-search-design-1 wd-dropdown"
+                    role="search"
+                  >
+                    <div class="wd-search-form">
+                      <input
+                        type="text"
+                        name="s"
+                        placeholder="Search for products"
+                        class="wd-search-input"
+                        autocomplete="off"
+                        aria-label="Search for products"
+                      />
+                      <button type="submit" class="wd-search-submit">
+                        <span class="wd-icon-search"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="whb-column whb-col-lg-0 whb-col-sm-6 whb-hidden-lg whb-hidden-md"
+              >
+                <div
+                  class="whb-element whb-footer-mobile-social whb-hidden-lg whb-hidden-md"
+                >
+                  <div class="whb-element whb-social-icons">
+                    <ul class="whb-social-list">
+                      <li>
+                        <a href="#"><span class="whb-icon-facebook"></span></a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="whb-icon-twitter"></span></a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="whb-icon-instagram"></span></a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="whb-icon-pinterest"></span></a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="whb-icon-youtube"></span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="whb-column whb-col-lg-3 whb-col-md-3 whb-hidden-sm whb-hidden-xs"
+              >
+                <div class="whb-element whb-copyright">
+                  <p>&copy; 2023 Woodmart. All Rights Reserved.</p>
+                </div>
+              </div>
+              <div
+                class="whb-column whb-col-lg-3 whb-col-md-3 whb-hidden-sm whb-hidden-xs"
+              >
+                <div class="whb-element whb-footer-payment-icons">
+                  <ul class="whb-payment-list">
+                    <li><span class="whb-icon-visa"></span></li>
+                    <li><span class="whb-icon-mastercard"></span></li>
+                    <li><span class="whb-icon-paypal"></span></li>
+                    <li><span class="whb-icon-american-express"></span></li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="whb-column whb-col-lg-3 whb-col-md-3 whb-hidden-sm whb-hidden-xs"
+              >
+                <div class="whb-element whb-footer-terms">
+                  <ul class="whb-footer-terms-list">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="whb-column whb-col-lg-3 whb-col-md-3 whb-hidden-sm whb-hidden-xs"
+              >
+                <div class="whb-element whb-footer-contact">
+                  <p>Contact us: (123) 456-7890</p>
+                  <p>Email: info@woodmart.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
